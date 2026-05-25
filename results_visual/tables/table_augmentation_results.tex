@@ -1,0 +1,22 @@
+\begin{table}
+    \caption{Effect of Gaussian Copula augmentation on test set performance.
+             $\Delta$ = augmented $-$ original. Negative $\Delta$ MAE and 
+             positive $\Delta$ R\textsuperscript{2} indicate improvement.}
+    \label{tab:augmentation_results}
+    \centering
+    \small
+    \begin{tabular}{lrrrrrr}
+        \toprule
+        & \multicolumn{2}{c}{R\textsuperscript{2}} 
+        & \multicolumn{2}{c}{MAE} 
+        & \multicolumn{2}{c}{RMSE} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+        Model & Orig & Aug & Orig & Aug & Orig & Aug \\
+        \midrule
+        Linear Regression & 0.565 & 0.561 & 18.55 & 18.65 & 23.17 & 23.28 \\
+        GAM & 0.583 & 0.564 & 18.60 & 18.57 & 22.70 & 23.18 \\
+        SVR & 0.496 & 0.562 & 21.17 & 19.28 & 24.93 & 23.24 \\
+        XGBoost & 0.624 & 0.612 & 18.36 & 17.13 & 21.56 & 21.89 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+
+\begin{table}
+    \caption{Training and validation performance across models (no augmentation).
+             Val metrics are means across 50 repeated 10-fold cross-validation folds.}
+    \label{tab:model_performance_trainval}
+    \centering
+    \small
+    \begin{tabular}{lrrrrrr}
+        \toprule
+        Model & Train R\textsuperscript{2} & Train MAE & Train RMSE & Val R\textsuperscript{2} & Val MAE & Val RMSE \\
+        \midrule
+        Linear Regression & 0.552 & 18.828 & 23.178 & 0.400 & 21.212 & 25.717 \\
+        GAM & 0.586 & 18.183 & 22.280 & 0.422 & 20.953 & 25.260 \\
+        SVR & 0.600 & 15.868 & 21.896 & 0.400 & 20.954 & 25.773 \\
+        XGBoost & 0.885 & 9.046 & 11.729 & 0.489 & 18.715 & 23.498 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

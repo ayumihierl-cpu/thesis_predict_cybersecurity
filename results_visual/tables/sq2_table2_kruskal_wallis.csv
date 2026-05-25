@@ -1,0 +1,5 @@
+Model,H statistic,p-value,Significant
+Linear Regression,9.386,0.0246,Yes
+GAM,7.702,0.0526,No
+SVR,8.463,0.0373,Yes
+XGBoost,13.756,0.0033,Yes

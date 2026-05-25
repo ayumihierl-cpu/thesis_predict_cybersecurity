@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+    \centering
+    \small
+    \caption{Kruskal-Wallis test results for prediction error differences across income groups.}
+    \label{tab:sq2_kruskal_wallis}
+    \begin{tabular}{lrrr}
+        \toprule
+        Model & H statistic & p-value & Significant \\
+        \midrule
+        Linear Regression & 9.386 & 0.025 & Yes \\
+        GAM & 7.702 & 0.053 & No \\
+        SVR & 8.463 & 0.037 & Yes \\
+        XGBoost & 13.756 & 0.003 & Yes \\
+        \bottomrule
+    \end{tabular}
+\end{table}

@@ -1,0 +1,37 @@
+\begin{table}
+    \caption{Mean absolute error (MAE) by income group and model: 
+             original versus Gaussian Copula augmented training data.
+             $\Delta$ MAE = augmented $-$ original; negative = augmentation improved performance.}
+    \label{tab:sq2_aug_comparison}
+    \centering
+    \small
+    \begin{tabular}{llrrr}
+        \toprule
+        Model & Income Group & MAE (orig) & MAE (aug) & $\Delta$ MAE \\
+        \midrule
+        \multicolumn{5}{l}{\textit{Linear Regression}} \\
+        & Low & 16.046 & 16.046 & +0.000 \\
+        & Lower middle & 25.461 & 25.461 & +0.000 \\
+        & Upper middle & 21.940 & 21.940 & +0.000 \\
+        & High & 17.483 & 17.483 & +0.000 \\
+        \midrule
+        \multicolumn{5}{l}{\textit{GAM}} \\
+        & Low & 16.209 & 15.998 & -0.211 \\
+        & Lower middle & 24.536 & 25.328 & +0.792 \\
+        & Upper middle & 21.328 & 21.860 & +0.532 \\
+        & High & 17.700 & 17.480 & -0.221 \\
+        \midrule
+        \multicolumn{5}{l}{\textit{SVR}} \\
+        & Low & 18.687 & 20.855 & +2.168 \\
+        & Lower middle & 25.836 & 27.562 & +1.726 \\
+        & Upper middle & 21.516 & 22.019 & +0.503 \\
+        & High & 16.349 & 17.045 & +0.696 \\
+        \midrule
+        \multicolumn{5}{l}{\textit{XGBoost}} \\
+        & Low & 17.978 & 18.329 & +0.351 \\
+        & Lower middle & 22.718 & 22.179 & -0.539 \\
+        & Upper middle & 19.487 & 21.234 & +1.747 \\
+        & High & 11.984 & 12.787 & +0.803 \\
+                \bottomrule
+    \end{tabular}
+\end{table}

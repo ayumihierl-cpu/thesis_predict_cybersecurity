@@ -1,0 +1,21 @@
+\begin{table}
+    \caption{Pairwise Wilcoxon signed-rank tests comparing cross-validation
+             MAE distributions across 50 repeated folds.
+             $\Delta$ MAE = Model 1 $-$ Model 2; negative = Model 2 lower.}
+    \label{tab:model_comparison_stats}
+    \centering
+    \small
+    \begin{tabular}{llrr}
+        \toprule
+        Model 1 & Model 2 & $\Delta$ MAE & $p$ \\
+        \midrule
+        Linear Regression & GAM & $+0.26$ & $0.226$ \\
+        Linear Regression & SVR & $+0.258$ & $0.388$ \\
+        Linear Regression & XGBoost & $+2.497$ & $<0.001^{\text{***}}$ \\
+        GAM & SVR & $-0.002$ & $0.939$ \\
+        GAM & XGBoost & $+2.238$ & $<0.001^{\text{***}}$ \\
+        SVR & XGBoost & $+2.239$ & $<0.001^{\text{***}}$ \\
+        \bottomrule
+        \multicolumn{4}{l}{\footnotesize $^{***}p<0.001$,\; $^{**}p<0.01$,\; $^{*}p<0.05$,\; NS\;$p\geq0.05$}
+    \end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+Model 1;Model 2;Mean MAE (M1);Mean MAE (M2);Delta MAE;W statistic;p (Wilcoxon);Significance;Lower MAE
+Linear Regression;GAM;21.212;20.953;0.26;511.0;0.226;NS;GAM
+Linear Regression;SVR;21.212;20.954;0.258;547.0;0.388;NS;SVR
+Linear Regression;XGBoost;21.212;18.715;2.497;206.0;<0.001;***;XGBoost
+GAM;SVR;20.953;20.954;-0.002;629.0;0.939;NS;GAM
+GAM;XGBoost;20.953;18.715;2.238;173.0;<0.001;***;XGBoost
+SVR;XGBoost;20.954;18.715;2.239;213.0;<0.001;***;XGBoost

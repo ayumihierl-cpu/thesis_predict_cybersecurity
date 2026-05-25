@@ -1,0 +1,25 @@
+Model,Group 1,Group 2,Mean Difference,95% CI Lower,95% CI Upper,Excludes Zero
+Linear Regression,Low income,Lower middle income,-9.415,-17.123,-0.897,Yes
+Linear Regression,Low income,Upper middle income,-5.893,-13.319,2.242,No
+Linear Regression,Low income,High income,-1.437,-8.82,6.517,No
+Linear Regression,Lower middle income,Upper middle income,3.521,-2.841,9.914,No
+Linear Regression,Lower middle income,High income,7.978,1.703,14.102,Yes
+Linear Regression,Upper middle income,High income,4.457,-1.544,10.417,No
+GAM,Low income,Lower middle income,-8.327,-15.339,-0.351,Yes
+GAM,Low income,Upper middle income,-5.118,-11.793,2.477,No
+GAM,Low income,High income,-1.491,-8.3,5.943,No
+GAM,Lower middle income,Upper middle income,3.208,-2.954,9.405,No
+GAM,Lower middle income,High income,6.836,0.677,12.885,Yes
+GAM,Upper middle income,High income,3.628,-2.25,9.477,No
+SVR,Low income,Lower middle income,-7.15,-14.938,1.071,No
+SVR,Low income,Upper middle income,-2.829,-10.205,4.879,No
+SVR,Low income,High income,2.338,-5.138,9.92,No
+SVR,Lower middle income,Upper middle income,4.321,-2.317,10.868,No
+SVR,Lower middle income,High income,9.487,2.555,16.156,Yes
+SVR,Upper middle income,High income,5.167,-1.082,11.309,No
+XGBoost,Low income,Lower middle income,-4.74,-12.001,2.567,No
+XGBoost,Low income,Upper middle income,-1.509,-7.489,4.646,No
+XGBoost,Low income,High income,5.995,-0.556,12.149,No
+XGBoost,Lower middle income,Upper middle income,3.23,-3.335,9.81,No
+XGBoost,Lower middle income,High income,10.734,3.501,17.777,Yes
+XGBoost,Upper middle income,High income,7.504,1.437,13.114,Yes

@@ -1,0 +1,18 @@
+
+\begin{table}
+    \caption{Test set performance across models (no augmentation).
+             Results are evaluated on the held-out 30\% test set.}
+    \label{tab:model_performance_test}
+    \centering
+    \small
+    \begin{tabular}{lrrr}
+        \toprule
+        Model & Test R\textsuperscript{2} & Test MAE & Test RMSE \\
+        \midrule
+        Linear Regression & 0.565 & 18.552 & 23.175 \\
+        GAM & 0.583 & 18.598 & 22.701 \\
+        SVR & 0.496 & 21.170 & 24.930 \\
+        XGBoost & 0.624 & 18.359 & 21.557 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

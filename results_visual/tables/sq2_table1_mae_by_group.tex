@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+    \centering
+    \small
+    \caption{Mean absolute error and signed residual by income group and model (out-of-fold predictions).}
+    \label{tab:sq2_mae_by_group}
+    \begin{tabular}{llrrrrrr}
+        \toprule
+        Model & Income Group & N & Mean MAE & Mean Residual \\
+        \midrule
+        Linear Regression & Low income & 19 & 16.046 & 5.032 \\
+        Linear Regression & Lower middle income & 41 & 25.461 & -2.592 \\
+        Linear Regression & Upper middle income & 41 & 21.940 & -1.844 \\
+        Linear Regression & High income & 40 & 17.483 & 1.052 \\
+        \midrule
+        GAM & Low income & 19 & 16.209 & 1.604 \\
+        GAM & Lower middle income & 41 & 24.536 & -0.994 \\
+        GAM & Upper middle income & 41 & 21.328 & -0.458 \\
+        GAM & High income & 40 & 17.700 & 0.314 \\
+        \midrule
+        SVR & Low income & 19 & 18.687 & -6.877 \\
+        SVR & Lower middle income & 41 & 25.836 & -0.568 \\
+        SVR & Upper middle income & 41 & 21.516 & -0.833 \\
+        SVR & High income & 40 & 16.349 & 0.528 \\
+        \midrule
+        XGBoost & Low income & 19 & 17.978 & -7.169 \\
+        XGBoost & Lower middle income & 41 & 22.718 & 2.126 \\
+        XGBoost & Upper middle income & 41 & 19.487 & 0.098 \\
+        XGBoost & High income & 40 & 11.984 & 0.247 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
