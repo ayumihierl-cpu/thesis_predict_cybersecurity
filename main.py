@@ -6,9 +6,7 @@ import pandas as pd
 import joblib
 import os
 from sklearn.model_selection import GridSearchCV, cross_validate
-from sklearn.pipeline import Pipeline
 from sklearn.base import clone
-from  import XGBRegressor
 from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 
 
@@ -26,8 +24,8 @@ from augmentation import gaussian_copula_augment, plot_augmentation_check
 
 os.makedirs('results', exist_ok=True)
 os.makedirs('results/figures', exist_ok=True)
-os.makedirs('results2/figures', exist_ok=True)
-os.makedirs('results2/tables', exist_ok=True)
+os.makedirs('results_visual/figures', exist_ok=True)
+os.makedirs('results_visual/tables', exist_ok=True)
 
 
 # -----------------------------
